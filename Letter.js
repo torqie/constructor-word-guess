@@ -19,10 +19,11 @@ function Letter(letter) {
 
   }
 
-  this.checkLetter = function (character) {
+  this.guess = function (character) {
     if(character === this.character) {
       this.hasBeenGuessed = true;
     }
-    this.returnLetter();
   }
 }
+
+module.exports = Letter;
