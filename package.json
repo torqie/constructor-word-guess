@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/torqie/constructor-word-guess#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "inquirer": "^7.1.0"
   }
 }
