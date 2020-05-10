@@ -2,6 +2,9 @@
 function Letter(letter) {
   this.character = letter;
   this.hasBeenGuessed = false;
+  if(letter === ' '){
+    this.hasBeenGuessed = true;
+  }
 
   this.returnLetter = function () {
     if(this.hasBeenGuessed) {

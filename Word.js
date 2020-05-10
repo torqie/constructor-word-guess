@@ -1,5 +1,6 @@
 const Letter = require("./Letter.js");
 
+
 function Word(word) {
   this.word = word.split("");
   this.correct = false;
@@ -21,9 +22,9 @@ function Word(word) {
 
   this.display = function() {
     if(this.correct) {
-      console.log("Correct: ", );
+      console.log("Correct!");
     } else {
-      console.log("Incorrect: ", );
+      console.log("Incorrect!");
     }
     
     let word = "";
@@ -32,11 +33,6 @@ function Word(word) {
       word += letter.returnLetter();
     }
     console.log(word);
-    const numCorrect = this.letters.filter(letter => letter.hasBeenGuessed);
-
-    if(numCorrect.length === this.letters.length) {
-      console.log("Gnarly, You Won!");
-    }
   };
 
 }
